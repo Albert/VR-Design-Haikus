@@ -2,7 +2,7 @@ VR Design Haikus
 ================
 This repo exists to showcase and share dope VR concepts.
 
-#Projects
+# Projects
 
-##Rainfall
+## Rainfall
 A concept where small cubes fall on your face. Ralaxing and sensual
