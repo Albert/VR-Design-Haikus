@@ -43,10 +43,13 @@ public class VelocityTrigger : MonoBehaviour {
 		if (cooldown <= 0) {
 			if (velocity >= 0.12f) {
 				audio.Play ();
+				Camera.main.backgroundColor = Color.white;
+				//GameObject.Find("Camera (eye)").GetComponents<Camera>().
 				cooldown = 1;
 			}
-		} else {
+		} else if(cooldown > 0){
 			cooldown -= Time.deltaTime;
+			Camera.main.backgroundColor = new Color(cooldown, cooldown, cooldown, 1);
 		}
 	}
 }
